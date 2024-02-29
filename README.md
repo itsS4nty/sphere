@@ -1,5 +1,4 @@
-oclif-hello-world
-=================
+# oclif-hello-world
 
 oclif example Hello World CLI
 
@@ -8,11 +7,15 @@ oclif example Hello World CLI
 [![GitHub license](https://img.shields.io/github/license/oclif/hello-world)](https://github.com/oclif/hello-world/blob/main/LICENSE)
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
+
+-   [Usage](#usage)
+-   [Commands](#commands)
 <!-- tocstop -->
+
 # Usage
+
 <!-- usage -->
+
 ```sh-session
 $ npm install -g sphere
 $ sphere COMMAND
@@ -24,22 +27,26 @@ USAGE
   $ sphere COMMAND
 ...
 ```
+
 <!-- usagestop -->
+
 # Commands
+
 <!-- commands -->
-* [`sphere hello PERSON`](#sphere-hello-person)
-* [`sphere hello world`](#sphere-hello-world)
-* [`sphere help [COMMANDS]`](#sphere-help-commands)
-* [`sphere plugins`](#sphere-plugins)
-* [`sphere plugins:install PLUGIN...`](#sphere-pluginsinstall-plugin)
-* [`sphere plugins:inspect PLUGIN...`](#sphere-pluginsinspect-plugin)
-* [`sphere plugins:install PLUGIN...`](#sphere-pluginsinstall-plugin-1)
-* [`sphere plugins:link PLUGIN`](#sphere-pluginslink-plugin)
-* [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin)
-* [`sphere plugins reset`](#sphere-plugins-reset)
-* [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin-1)
-* [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin-2)
-* [`sphere plugins update`](#sphere-plugins-update)
+
+-   [`sphere hello PERSON`](#sphere-hello-person)
+-   [`sphere hello world`](#sphere-hello-world)
+-   [`sphere help [COMMANDS]`](#sphere-help-commands)
+-   [`sphere plugins`](#sphere-plugins)
+-   [`sphere plugins:install PLUGIN...`](#sphere-pluginsinstall-plugin)
+-   [`sphere plugins:inspect PLUGIN...`](#sphere-pluginsinspect-plugin)
+-   [`sphere plugins:install PLUGIN...`](#sphere-pluginsinstall-plugin-1)
+-   [`sphere plugins:link PLUGIN`](#sphere-pluginslink-plugin)
+-   [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin)
+-   [`sphere plugins reset`](#sphere-plugins-reset)
+-   [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin-1)
+-   [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin-2)
+-   [`sphere plugins update`](#sphere-plugins-update)
 
 ## `sphere hello PERSON`
 
@@ -161,7 +168,7 @@ ALIASES
   $ sphere plugins add
 
 EXAMPLES
-  $ sphere plugins add myplugin 
+  $ sphere plugins add myplugin
 
   $ sphere plugins add https://github.com/someuser/someplugin
 
@@ -230,7 +237,7 @@ ALIASES
   $ sphere plugins add
 
 EXAMPLES
-  $ sphere plugins install myplugin 
+  $ sphere plugins install myplugin
 
   $ sphere plugins install https://github.com/someuser/someplugin
 
@@ -381,4 +388,5 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v4.2.2/src/commands/plugins/update.ts)_
+
 <!-- commandsstop -->

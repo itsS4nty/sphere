@@ -1,75 +1,83 @@
 {
-  "name": "sphere",
-  "version": "0.0.0",
-  "description": "oclif example Hello World CLI (ESM)",
-  "keywords": [
-    "oclif"
-  ],
-  "homepage": "https://github.com/https://github.com/itsS4nty//https://github.com/itsS4nty/Sphere",
-  "bugs": "https://github.com/https://github.com/itsS4nty//https://github.com/itsS4nty/Sphere/issues",
-  "repository": "https://github.com/itsS4nty//https://github.com/itsS4nty/Sphere",
-  "license": "MIT",
-  "author": "itsS4nty",
-  "type": "module",
-  "exports": "./lib/index.js",
-  "main": "",
-  "types": "dist/index.d.ts",
-  "bin": {
-    "sphere": "./bin/run.js"
-  },
-  "files": [
-    "/bin",
-    "/dist",
-    "/oclif.manifest.json"
-  ],
-  "scripts": {
-    "build": "shx rm -rf dist && tsc -b",
-    "lint": "eslint . --ext .ts",
-    "prepack": "npm run build && oclif manifest && oclif readme",
-    "postpack": "shx rm -f oclif.manifest.json",
-    "prepare": "npm run build",
-    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
-    "posttest": "npm run lint",
-    "version": "oclif readme && git add README.md"
-  },
-  "oclif": {
-    "bin": "sphere",
-    "commands": "./dist/commands",
-    "dirname": "sphere",
-    "plugins": [
-      "@oclif/plugin-help",
-      "@oclif/plugin-plugins"
+    "name": "sphere",
+    "version": "0.0.0",
+    "description": "oclif example Hello World CLI (ESM)",
+    "keywords": [
+        "oclif"
     ],
-    "topicSeparator": " ",
-    "topics": {
-      "hello": {
-        "description": "Say hello to the world and others"
-      }
+    "homepage": "https://github.com/https://github.com/itsS4nty//https://github.com/itsS4nty/Sphere",
+    "bugs": "https://github.com/https://github.com/itsS4nty//https://github.com/itsS4nty/Sphere/issues",
+    "repository": "https://github.com/itsS4nty//https://github.com/itsS4nty/Sphere",
+    "license": "MIT",
+    "author": "itsS4nty",
+    "type": "module",
+    "exports": "./lib/index.js",
+    "main": "",
+    "types": "dist/index.d.ts",
+    "bin": {
+        "sphere": "./bin/run.js"
+    },
+    "files": [
+        "/bin",
+        "/dist",
+        "/oclif.manifest.json"
+    ],
+    "scripts": {
+        "build": "shx rm -rf dist && tsc -b",
+        "prepack": "npm run build && oclif manifest && oclif readme",
+        "postpack": "shx rm -f oclif.manifest.json",
+        "prepare": "npm run build",
+        "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+        "posttest": "npm run lint",
+        "version": "oclif readme && git add README.md",
+        "lint": "eslint . --ext .ts",
+        "lint:fix": "eslint . --ext .ts --fix",
+        "prettier": "prettier . --check",
+        "prettier:fix": "prettier . --write",
+        "fix:all": "npm run prettier:fix && npm run lint:fix && node scripts/format.js"
+    },
+    "oclif": {
+        "bin": "sphere",
+        "commands": "./dist/commands",
+        "dirname": "sphere",
+        "plugins": [
+            "@oclif/plugin-help",
+            "@oclif/plugin-plugins"
+        ],
+        "topicSeparator": " ",
+        "topics": {
+            "hello": {
+                "description": "Say hello to the world and others"
+            }
+        }
+    },
+    "dependencies": {
+        "@oclif/core": "^3",
+        "@oclif/plugin-help": "^6",
+        "@oclif/plugin-plugins": "^4"
+    },
+    "devDependencies": {
+        "@oclif/prettier-config": "^0.2.1",
+        "@oclif/test": "^3",
+        "@types/chai": "^4",
+        "@types/mocha": "^10",
+        "@types/node": "^18",
+        "@typescript-eslint/eslint-plugin": "^6.3.0",
+        "@typescript-eslint/parser": "^6.3.0",
+        "chai": "^4",
+        "eslint": "^8",
+        "eslint-config-oclif": "^5",
+        "eslint-config-oclif-typescript": "^3",
+        "eslint-plugin-import-newlines": "^1.3.4",
+        "eslint-config-prettier": "^9.1.0",
+        "glob": "^10.3.10",
+        "mocha": "^10",
+        "oclif": "^4.4.12",
+        "shx": "^0.3.4",
+        "ts-node": "^10.9.2",
+        "typescript": "^5"
+    },
+    "engines": {
+        "node": ">=18.0.0"
     }
-  },
-  "dependencies": {
-    "@oclif/core": "^3",
-    "@oclif/plugin-help": "^6",
-    "@oclif/plugin-plugins": "^4"
-  },
-  "devDependencies": {
-    "@oclif/prettier-config": "^0.2.1",
-    "@oclif/test": "^3",
-    "@types/chai": "^4",
-    "@types/mocha": "^10",
-    "@types/node": "^18",
-    "chai": "^4",
-    "eslint": "^8",
-    "eslint-config-oclif": "^5",
-    "eslint-config-oclif-typescript": "^3",
-    "eslint-config-prettier": "^9.1.0",
-    "mocha": "^10",
-    "oclif": "^4.4.12",
-    "shx": "^0.3.4",
-    "ts-node": "^10.9.2",
-    "typescript": "^5"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  }
 }
