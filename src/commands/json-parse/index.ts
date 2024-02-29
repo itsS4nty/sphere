@@ -3,7 +3,7 @@ import { Parser } from '../../lib/parser';
 
 export default class JsonParse extends Command {
     static args = {
-        file: Args.string(({ description: 'Specify a file to parse', required: false })),
+        file: Args.string({ description: 'Specify a file to parse', required: false }),
     };
 
     static description = 'Parse a JSON to TS interface';
@@ -22,7 +22,7 @@ export default class JsonParse extends Command {
 
         const p = new Parser();
 
-        if(args.file) p.parseSchema(args.file);
+        if (args.file) p.parseSchema(args.file);
         else console.log('File not provided');
     }
 }
