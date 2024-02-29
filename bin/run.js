@@ -1,5 +1,7 @@
 #!/usr/bin/env node
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-var-requires */
 
-import { execute } from '@oclif/core';
+const oclif = require('@oclif/core');
 
-await execute({ dir: import.meta.url });
+oclif.run().then(require('@oclif/core/flush')).catch(require('@oclif/core/handle'));

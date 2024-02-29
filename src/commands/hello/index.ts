@@ -3,6 +3,7 @@ import { Args, Command, Flags } from '@oclif/core';
 export default class Hello extends Command {
     static args = {
         person: Args.string({ description: 'Person to say hello to', required: true }),
+        person2: Args.string({ description: 'Person to say hello to', required: true }),
     };
 
     static description = 'Say hello';
