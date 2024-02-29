@@ -1,6 +1,4 @@
-# oclif-hello-world
-
-oclif example Hello World CLI
+# Sphere
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![CircleCI](https://circleci.com/gh/oclif/hello-world/tree/main.svg?style=shield)](https://circleci.com/gh/oclif/hello-world/tree/main)
@@ -34,61 +32,43 @@ USAGE
 
 <!-- commands -->
 
--   [`sphere hello PERSON`](#sphere-hello-person)
--   [`sphere hello world`](#sphere-hello-world)
--   [`sphere help [COMMANDS]`](#sphere-help-commands)
--   [`sphere plugins`](#sphere-plugins)
--   [`sphere plugins:install PLUGIN...`](#sphere-pluginsinstall-plugin)
--   [`sphere plugins:inspect PLUGIN...`](#sphere-pluginsinspect-plugin)
--   [`sphere plugins:install PLUGIN...`](#sphere-pluginsinstall-plugin-1)
--   [`sphere plugins:link PLUGIN`](#sphere-pluginslink-plugin)
--   [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin)
--   [`sphere plugins reset`](#sphere-plugins-reset)
--   [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin-1)
--   [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin-2)
--   [`sphere plugins update`](#sphere-plugins-update)
+- [Sphere](#sphere)
+- [Usage](#usage)
+- [Commands](#commands)
+  - [`sphere json-parse FILE`](#sphere-json-parse-file)
+  - [`sphere help [COMMANDS]`](#sphere-help-commands)
+  - [`sphere plugins`](#sphere-plugins)
+  - [`sphere plugins:install PLUGIN...`](#sphere-pluginsinstall-plugin)
+  - [`sphere plugins:inspect PLUGIN...`](#sphere-pluginsinspect-plugin)
+  - [`sphere plugins:install PLUGIN...`](#sphere-pluginsinstall-plugin-1)
+  - [`sphere plugins:link PLUGIN`](#sphere-pluginslink-plugin)
+  - [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin)
+  - [`sphere plugins reset`](#sphere-plugins-reset)
+  - [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin-1)
+  - [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin-2)
+  - [`sphere plugins update`](#sphere-plugins-update)
 
-## `sphere hello PERSON`
+## `sphere json-parse FILE`
 
-Say hello
+Parse a JSON file and get types of it
 
 ```
 USAGE
-  $ sphere hello PERSON -f <value>
+  $ sphere json-parse FILE
 
 ARGUMENTS
-  PERSON  Person to say hello to
+  FILE  File to parse
 
-FLAGS
-  -f, --from=<value>  (required) Who is saying hello
 
 DESCRIPTION
-  Say hello
+  Parse a JSON file and get types of it
 
 EXAMPLES
-  $ oex hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
+  $ sphere json-parse myjson.json
+  File parsed!
 ```
 
 _See code: [src/commands/hello/index.ts](https://github.com/itsS4nty//https://github.com/itsS4nty/Sphere/blob/v0.0.0/src/commands/hello/index.ts)_
-
-## `sphere hello world`
-
-Say hello world
-
-```
-USAGE
-  $ sphere hello world
-
-DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ sphere hello world
-  hello world! (./src/commands/hello/world.ts)
-```
-
-_See code: [src/commands/hello/world.ts](https://github.com/itsS4nty//https://github.com/itsS4nty/Sphere/blob/v0.0.0/src/commands/hello/world.ts)_
 
 ## `sphere help [COMMANDS]`
 
