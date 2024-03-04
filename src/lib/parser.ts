@@ -90,11 +90,8 @@ export class Parser {
             }
         }
         const _isSameType = _acc.every(value => value === _acc[0]);
-        if(_isSameType) {
-            return `${_acc[0]}[]`;
-        }
 
-        return `(${_acc.join(' | ')})[]`;
+        return _isSameType ? `${_acc[0]}[]` : `(${_acc.join(' | ')})[]`;
     }
 
     private _getType(_value: unknown): string {
