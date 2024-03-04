@@ -32,21 +32,21 @@ USAGE
 
 <!-- commands -->
 
-- [Sphere](#sphere)
-- [Usage](#usage)
-- [Commands](#commands)
-  - [`sphere json-parse FILE`](#sphere-json-parse-file)
-  - [`sphere help [COMMANDS]`](#sphere-help-commands)
-  - [`sphere plugins`](#sphere-plugins)
-  - [`sphere plugins:install PLUGIN...`](#sphere-pluginsinstall-plugin)
-  - [`sphere plugins:inspect PLUGIN...`](#sphere-pluginsinspect-plugin)
-  - [`sphere plugins:install PLUGIN...`](#sphere-pluginsinstall-plugin-1)
-  - [`sphere plugins:link PLUGIN`](#sphere-pluginslink-plugin)
-  - [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin)
-  - [`sphere plugins reset`](#sphere-plugins-reset)
-  - [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin-1)
-  - [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin-2)
-  - [`sphere plugins update`](#sphere-plugins-update)
+-   [Sphere](#sphere)
+-   [Usage](#usage)
+-   [Commands](#commands)
+    -   [`sphere json-parse FILE`](#sphere-json-parse-file)
+    -   [`sphere help [COMMANDS]`](#sphere-help-commands)
+    -   [`sphere plugins`](#sphere-plugins)
+    -   [`sphere plugins:install PLUGIN...`](#sphere-pluginsinstall-plugin)
+    -   [`sphere plugins:inspect PLUGIN...`](#sphere-pluginsinspect-plugin)
+    -   [`sphere plugins:install PLUGIN...`](#sphere-pluginsinstall-plugin-1)
+    -   [`sphere plugins:link PLUGIN`](#sphere-pluginslink-plugin)
+    -   [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin)
+    -   [`sphere plugins reset`](#sphere-plugins-reset)
+    -   [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin-1)
+    -   [`sphere plugins:uninstall PLUGIN...`](#sphere-pluginsuninstall-plugin-2)
+    -   [`sphere plugins update`](#sphere-plugins-update)
 
 ## `sphere json-parse FILE`
 
@@ -68,7 +68,7 @@ EXAMPLES
   File parsed!
 ```
 
-_See code: [src/commands/hello/index.ts](https://github.com/itsS4nty//https://github.com/itsS4nty/Sphere/blob/v0.0.0/src/commands/hello/index.ts)_
+_See code: [src/commands/json-parse/index.ts](https://github.com/itsS4nty//https://github.com/itsS4nty/Sphere/blob/v0.0.0/src/commands/json-parse/index.ts)_
 
 ## `sphere help [COMMANDS]`
 

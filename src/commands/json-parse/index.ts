@@ -22,7 +22,7 @@ export default class JsonParse extends Command {
 
         const p = new Parser();
 
-        if (args.file) p.parseSchema(args.file);
+        if(args.file) p.parseSchema(args.file);
         else console.log('File not provided');
     }
 }
