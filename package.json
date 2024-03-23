@@ -71,7 +71,7 @@
         "eslint-config-prettier": "^9.1.0",
         "glob": "^10.3.10",
         "mocha": "^10",
-        "oclif": "^4.4.12",
+        "oclif": "^4.6.1",
         "shx": "^0.3.4",
         "ts-node": "^10.9.2",
         "typescript": "^5"
