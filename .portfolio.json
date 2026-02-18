@@ -1,0 +1,31 @@
+{
+  "overview": "A developer-focused CLI tool built with oclif and TypeScript that parses JSON files and generates TypeScript interfaces from their structure. It recursively analyzes nested objects, arrays, and primitive types to produce accurate type definitions, streamlining the workflow of converting API responses or config files into strongly typed interfaces.",
+  "metrics": [
+    "Recursive nested-object type inference",
+    "Union-type detection for mixed arrays",
+    "Custom error hierarchy with 5 error classes",
+    "Node.js ≥ 18 compatible",
+    "Mocha + oclif/test coverage"
+  ],
+  "additionalTechStack": ["oclif", "Mocha", "Chai"],
+  "challenges": [
+    "Recursive type traversal for arbitrarily deep JSON structures",
+    "Union-type resolution for heterogeneous arrays",
+    "Extensible custom error hierarchy for parser diagnostics"
+  ],
+  "features": [
+    "JSON-to-TypeScript interface generation: point at any .json file and get a ready-to-use TS interface printed to stdout",
+    "Recursive type inference that handles deeply nested objects and produces inline sub-interfaces",
+    "Smart array typing: homogeneous arrays resolve to T[], mixed arrays resolve to (A | B)[] union types",
+    "Auto-naming of interfaces derived from the input filename",
+    "Configurable root and output paths via a central config module",
+    "Robust error handling with a custom TransformationError hierarchy covering missing paths, missing schemas, and parse failures",
+    "Plugin-based CLI architecture powered by oclif with built-in help, plugin management, and extensibility"
+  ],
+  "architecture": {
+    "system": "oclif-based CLI with a modular parser engine and centralized configuration",
+    "details": "The CLI entry point delegates to oclif's command resolver, which routes to the json-parse command. That command instantiates a Parser class that reads the target JSON file from a configurable root directory, validates its existence through a chain of custom TransformationError subclasses, and recursively walks the parsed object to build a TypeScript interface string. Primitive types are resolved via typeof, objects recurse into _getTypes, and arrays are handled by _getArrTypes which collapses homogeneous types into T[] or emits union types. The config module centralizes default paths (schemas root, output directory) as a frozen object. Tests run through Mocha with oclif's test harness for command-level assertions."
+  },
+  "source": "https://github.com/itsS4nty/Sphere",
+  "live": ""
+}
